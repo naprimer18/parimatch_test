@@ -10,9 +10,9 @@ export default class Present extends Component {
     render() {
     console.log(this.props.item);
         return (
-            <div>
+            <div className='item-container'>
                 {this.state.isShowItem ?
-                    <div>
+                    <div className='items'>
                         <ul>
                             {this.props.item.map((data,index) =>
                                 <li key={index}>
@@ -22,11 +22,13 @@ export default class Present extends Component {
                                    " " {data.chance}
                                 </li>
                             )}
+                            <button onClick={()=> {this.setState({isShowItem: false})}}>Exit</button>
                         </ul>
-                        <button onClick={()=> {this.setState({isShowItem: false})}}>Exit</button>
                     </div>
-                    :null}
-            <button onClick={()=> {this.setState({isShowItem: true})}}>Explane</button>
+                    : <div style={{ backgroundImage: `url(https://www.stickees.com/files/love/gifts/458-yellow-and-red-gift-box.png)`, width:'280px', height:'260px'}}></div>
+                }
+
+                <button onClick={()=> {this.setState({isShowItem: true})}}>Explane</button>
             </div>
         );
     }

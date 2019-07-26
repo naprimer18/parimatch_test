@@ -1,0 +1,65 @@
+.container {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    width: 420px;
+    height: 560px;
+    background: #F0F5F7;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.item-container {
+    font-size: 15px;
+    width: 420px;
+    min-height: 320px;
+}
+.items {
+    height: 400px;
+    width: 420px;
+}
+.name {
+    text-align: center;
+    font-size: 20px;
+    font-family: inherit;
+    padding: 10px;
+}
+.start {
+    float: left;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+}
+.end {
+    float: right;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+}
+.description {
+    margin-top: 60px;
+    text-align: center;
+    height: 50px;
+    width: 400px;
+    padding: 10px;
+}
+.itams-lenght {
+    float: left;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+}
+.probability {
+    float: right;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+}
