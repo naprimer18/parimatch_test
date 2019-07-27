@@ -1,46 +1,58 @@
+.body {
+    background-color: red;
+}
 .container {
     padding: 5px;
     display: flex;
     flex-wrap: wrap;
+    background-color: #808080;
 }
-.item {
-    width: 420px;
-    height: 560px;
-    background: #F0F5F7;
+.item-block {
+    width: 450px;
+    height: 800px;
+    background: #FFFAFA;
     display: inline-block;
     margin-bottom: 10px;
     margin-right: 10px;
     position: relative;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 .item-container {
     font-size: 15px;
-    width: 420px;
-    min-height: 320px;
+    width: 450px;
+    height: 500px;
 }
 .items {
-    height: 400px;
-    width: 420px;
+    height: 450px;
+    width: 450px;
+    position: absolute;
 }
 .name {
     text-align: center;
-    font-size: 20px;
-    font-family: inherit;
+    font-size: 25px;
+    font-weight: bold;
     padding: 10px;
 }
 .start {
     float: left;
     width: 160px;
     height: 40px;
+    font-size: 20px;
     text-align: center;
     padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 .end {
     float: right;
     width: 160px;
     height: 40px;
+    font-size: 20px;
     text-align: center;
     padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 .description {
     margin-top: 60px;
@@ -48,18 +60,94 @@
     height: 50px;
     width: 400px;
     padding: 10px;
+    color:#C0C0C0;
+    font-size: 18px;
 }
-.itams-lenght {
+.items-lenght {
     float: left;
-    width: 40px;
+    width: 100px;
     height: 40px;
+    font-size: 20px;
+    margin-left: 20px;
     text-align: center;
     padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 .probability {
     float: right;
-    width: 80px;
+    width: 140px;
+    font-size: 20px;
     height: 40px;
+    margin-right: 50px;
     text-align: center;
     padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
+.green {
+    color: #32CD32;
+}
+.blue {
+    color: #4682B4;
+}
+button {
+    display: inline-block;
+    width: 30em;
+    height: 3em;
+    line-height: 2em;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    color: rgb(0,0,0);
+    outline: none;
+    border: 1px solid rgba(0,0,0,.4);
+    border-top-color: rgba(0,0,0,.3);
+    border-radius: 2px;
+    background: linear-gradient(rgb(255,255,255), rgb(240,240,240));
+    box-shadow:
+            0 0 3px rgba(0,0,0,0) inset,
+            0 1px 1px 1px rgba(255,255,255,.2),
+            0 -1px 1px 1px rgba(0,0,0,0);
+    transition: .2s ease-in-out;
+}
+
+.button-explain {
+    position:absolute;
+    top: 745px;
+    left: 20px;
+}
+.button-exit {
+    position:absolute;
+    left: 180px;
+    top: 480px;
+    width: 5em;
+    height: 2em;
+}
+.present-img {
+    width: 450px;
+    height: 450px;
+    background: url(https://www.stickees.com/files/love/gifts/458-yellow-and-red-gift-box.png) no-repeat center;
+}
+.wrapper-items {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #DCDCDC;
+    padding-left: 10px;
+}
+.wrapper-items.bold {
+    font-weight: bold;
+}
+.item-name {
+    width: 280px;
+    padding-right: 20px;
+    padding: 2px;
+}
+.item {
+    padding: 2x;
+    padding-right: 20px;
+    width: 30px
+}
+
+

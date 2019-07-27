@@ -8,27 +8,29 @@ export default class Present extends Component {
         }
     }
     render() {
-    console.log(this.props.item);
         return (
             <div className='item-container'>
                 {this.state.isShowItem ?
                     <div className='items'>
-                        <ul>
+                        <div className='wrapper-items bold'>
+                            <div className='item-name'>Items</div>
+                            <div className='item'>Level</div>
+                            <div className='item'>Cost</div>
+                            <div className='item'>Chance</div>
+                        </div>
                             {this.props.item.map((data,index) =>
-                                <li key={index}>
-                                    {data.name}
-                                   " " {data.level}
-                                   " "{data.cost}
-                                   " " {data.chance}
-                                </li>
+                                    <div className='wrapper-items' key={index}>
+                                        <div className='item-name'>{data.name}</div>
+                                        <div className='item'>{data.level}</div>
+                                        <div className='item'>{data.cost}</div>
+                                        <div className='item'>{data.chance}</div>
+                                    </div>
                             )}
-                            <button onClick={()=> {this.setState({isShowItem: false})}}>Exit</button>
-                        </ul>
+                            <button className='button-exit' onClick={()=> {this.setState({isShowItem: false})}}>Hide</button>
                     </div>
-                    : <div style={{ backgroundImage: `url(https://www.stickees.com/files/love/gifts/458-yellow-and-red-gift-box.png)`, width:'280px', height:'260px'}}></div>
+                    : <div className='present-img'></div>
                 }
-
-                <button onClick={()=> {this.setState({isShowItem: true})}}>Explane</button>
+                <button className='button-explain' onClick={()=> {this.setState({isShowItem: true})}}>Explain</button>
             </div>
         );
     }
